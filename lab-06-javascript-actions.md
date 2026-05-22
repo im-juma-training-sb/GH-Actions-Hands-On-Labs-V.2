@@ -281,7 +281,8 @@ jobs:
             A team member will triage this issue within 24 hours.
 
       - name: Log the comment ID
-        run: echo "Created comment ID: ${{ steps.greeter.outputs.comment-id }}"
+        run: |
+          echo "Created comment ID: ${{ steps.greeter.outputs.comment-id }}"
         # ↑ Access the output set by core.setOutput('comment-id', ...)
 ```
 
